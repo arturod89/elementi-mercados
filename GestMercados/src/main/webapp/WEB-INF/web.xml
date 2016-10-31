@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="WebApp_ID" version="3.0" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    
+   <display-name>GestMercados</display-name>
+   <servlet>
+		<servlet-name>mvc-dispatcher</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<init-param>
+            <param-name>contextConfigLocation</param-name>
+            <param-value>
+              /WEB-INF/mvc-dispatcher-servlet.xml
+              /WEB-INF/i18n.xml
+            </param-value>
+        </init-param>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>mvc-dispatcher</servlet-name>
+		<url-pattern>*.html</url-pattern>
+	</servlet-mapping>
+	
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>
+		classpath:META-INF/spring/applicationContext.xml
+		</param-value>
+	</context-param>
+	
+	
+<!--     <filter> -->
+<!--         <description>Clase para validar un usuario en sesion</description> -->
+<!--         <display-name>SessionFilter</display-name> -->
+<!--         <filter-name>SessionFilter</filter-name> -->
+<!--         <filter-class>com.mdp.retenciones.seguridad.SessionFilter</filter-class> -->
+<!--         <init-param> -->
+<!--             <param-name>NOT_AUTHORIZED</param-name> -->
+<!--             <param-value>notAuthorized.html</param-value> -->
+<!--         </init-param> -->
+<!--         <init-param> -->
+<!--             <param-name>USUARIO_EN_SESION</param-name> -->
+<!--             <param-value>__current_user__</param-value> -->
+<!--         </init-param> -->
+<!--     </filter> -->
+<!--     <filter-mapping> -->
+<!--         <filter-name>SessionFilter</filter-name> -->
+<!--         <servlet-name>mvc-dispatcher</servlet-name> -->
+<!--     </filter-mapping> -->
+<!--     <filter-mapping> -->
+<!--         <filter-name>SessionFilter</filter-name> -->
+<!--         <url-pattern>/SessionFilter</url-pattern> -->
+<!--     </filter-mapping> -->
+<!--     <filter-mapping> -->
+<!--         <filter-name>SessionFilter</filter-name> -->
+<!--         <url-pattern>*.jsp</url-pattern> -->
+<!--     </filter-mapping> -->
+<!--     <filter-mapping> -->
+<!--         <filter-name>SessionFilter</filter-name> -->
+<!--         <url-pattern>*.html</url-pattern> -->
+<!--     </filter-mapping> -->
+    
+	
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+	<listener>
+        <listener-class>org.springframework.web.context.request.RequestContextListener</listener-class>
+    </listener>
+    
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+  
+</web-app>
+

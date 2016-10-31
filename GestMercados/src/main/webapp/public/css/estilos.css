@@ -1,0 +1,84 @@
+@media screen and (min-width: 1200px){	
+	.container{	
+		width: 1000px;
+	}
+}
+
+
+.divCenter{
+	text-align:center;	
+}
+
+.file-info{
+  font-size:20px;
+  color:#E1E1E1;
+}
+
+/*Spinner Style*/
+
+.spinner-wrapper {
+    position: fixed;
+    width: 100%;
+    height:100%;
+    display: none;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.80);
+    top: 0;
+	z-index:2000;	
+}
+
+.spinner {
+    color:white;    
+    margin: 0 auto;
+    font-size:30px;
+    height:200px;
+    background:url("../img/spinner.gif") no-repeat;
+	background-size: 100px 100px;
+	background-position:30px 40px;
+}
+
+.rowVAligned td {
+   vertical-align:middle!important;		 
+}
+
+.customForm .help-block{
+	display:none;
+}
+
+.labelForm{
+   font-size:12px;
+   vertical-align:middle;
+   position: relative;
+   top: 50%;
+  	-webkit-transform: translateY(50%);  
+  	transform: translateY(50%);		
+}
+
+.cellTableSelector{
+	text-align:center;	
+}
+
+.cellTableNumeric{
+	text-align:right;	
+}
+
+
+.panel-body .pagination{	
+	margin-top:0px;
+	margin-bottom:0px;
+}
+
+.table-striped > tbody > tr:nth-of-type(2n+1){
+	
+	background-color:#f1f1f1;
+}
+
+.modal-cert { width: 800px; }
+
+textarea {
+   resize: none;
+}
+
+.panelUser{
+   font-size:12px;		
+}

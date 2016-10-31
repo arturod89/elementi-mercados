@@ -1,0 +1,68 @@
+#pagina {
+	margin:0px auto;
+	width:100%;
+}
+#cabecera {
+	position: fixed;
+	top:0;
+	width:97%;
+	height:100px;
+	background-color:white;
+	color:black;
+	padding-top:25px;
+	padding-left:20px;
+	border-bottom:4px solid #045FB4;
+}
+* html body {
+  	overflow:hidden;
+}
+#contenido {
+	
+	
+	margin-top:180px ;
+	width:100%;
+	background-color:white;
+	color:black;
+	position:block;
+	font-family:Arial;
+	font-size:12px;
+	
+}
+#tablaArchivos{
+	border:3px solid #045FB4;
+	width:550px;
+}
+.disabled-box{
+	border:none;
+	background:#B2EAE7;
+}
+.ajustar-texto{
+	width:150px;
+	float:right;
+	white-space: pre-line;
+	word-wrap: break-word;
+}
+.descripcion{
+	width:250px;
+	float:right;
+	white-space: pre-line;
+	word-wrap: break-word;
+}
+.altoEspacio{
+	height:20px;
+}
+.altoEncab{
+	height:30px;
+}
+
+#spanMensaje{
+	
+	font-family:"Arial";
+	font-size:12px;
+}
+
+#spanConfirma{
+	
+	font-family:"Arial";
+	font-size:12px;
+}
